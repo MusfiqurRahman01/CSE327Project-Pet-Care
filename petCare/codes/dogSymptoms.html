@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>PET CARE!</title>
+  </head>
+  <body style="background-color: powderblue;">
+      <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="file:///C:/Users/Musfiqur%20Alip/Desktop/cse327pro/homepage.html">PET CARE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="file:///C:/Users/Musfiqur%20Alip/Desktop/petCare/patecareweb/homepage.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Emergency</a>
+          </li>
+
+
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2"  type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-info mt-1">
+                <div class="container text-light">
+                  <h1 class="display-4 text-center ">Symptoms for Dog</h1>
+                  <p class="lead text-center ">Please enter 1 or 2 for seleting Symptoms</p>
+                </div>
+                </div>
+
+
+
+
+              <form id="form1">
+                  <div class="container text-light">
+                    <h1 id="po">Input 1 or else 2 for Symptoms</h1>
+         <form class="" action="index.html" method="post">
+           <h5 id="po" style="color:black">1.Has lethargy?</h5>
+           <h5 id="po" style="color:black">2.Has mild persistent cough?</h5>
+             <input type="number" name="array[]" value="Add" /><br>
+             <h5 id="po" style="color:black">1.Has loss of appetite?</h5>
+             <h5 id="po" style="color:black">2.Has fatigue after moderate activity?</h5>
+             <input type="number" name="array[]" value="Add" /><br>
+             <h5 id="po" style="color:black">1.Has abdominal pain and bloating?</h5>
+             <h5 id="po" style="color:black">2.Has weight loss?</h5>
+             <input type="number" name="array[]" value="Add" /><br>
+             <h5 id="po" style="color:black">1.Has  fever or low body temperature (hypothermia)?</h5>
+             <h5 id="po" style="color:black">2.Has Difficulty in breathing?</h5>
+             <input type="number" name="array[]" value="Add" /><br>
+             <h5 id="po" style="color:black">1.Has vomiting and diarrhea?</h5>
+             <h5 id="po" style="color:black">2.Has Bulging ribs?</h5>
+             <input type="number" name="array[]" value="Add" /><br>
+             <button type="button" name="button" value="Add" onclick="Geeks()">
+                 Submit
+             </button>
+         </form>
+
+            </div>
+              </form>
+
+
+
+
+ <p id="par"></p>
+
+
+  <script>
+    var k;
+    var q = new Array (1,1,1,1,1);
+    var count = 0;
+    var house = new Array(5);
+          function Geeks() {
+              var input = document.getElementsByName('array[]');
+
+              for ( i = 0; i < input.length; i++) {
+                  var a = input[i];
+                  k = a.value ;
+                  house[i] = k;
+              }
+
+              for (j = 0; j < 5; j++){
+
+                    if(q[j]==house[j]){
+                      count = count+1;
+                    }
+
+
+                  //document.writeln(a.value);
+
+              }
+
+              if(count>2)
+              location.href = "file:///C:/Users/Musfiqur%20Alip/Desktop/petCare/patecareweb/canineparvovirus.html"
+              //var input2 = prompt('Roundworms');
+              else
+              location.href = "file:///C:/Users/Musfiqur%20Alip/Desktop/petCare/patecareweb/heartworms.html"
+
+              //var input2 = prompt('Salmonella');
+
+
+              //document.getElementById("par").innerHTML = k;
+              document.getElementById("po").innerHTML = "Output";
+          }
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+<p id="demo"></p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
