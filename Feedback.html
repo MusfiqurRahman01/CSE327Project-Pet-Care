@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src='script.js'>
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_32yDQLbenFpHYmbGycfeL");
+        })();
+    </script>
+
+</head>
+
+
+<body>
+
+    <h1>Send us a Feedback!</h1>
+
+    <input type="text" id="Entertoname" placeholder="Entertoname">
+    <br>
+    <input type="text" id="Fromname" placeholder="Fromname">
+    <br>
+    <input type="text" id="Feedback" placeholder="Feedback">
+    <br>
+
+    <button onclick='sendmail()'>Submit</button>
+
+
+</body>
+
+</html>
