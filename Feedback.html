@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="fdstyle.css">
+
+    <script src='script.js'>
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_32yDQLbenFpHYmbGycfeL");
+        })();
+    </script>
+
+</head>
+
+
+<body>
+
+
+
+    <input type="text" id="Entertoname" placeholder="Name">
+    <br>
+    <br>
+
+    <input type="text" id="Fromname" placeholder="Pet">
+    <br>
+    <br>
+
+    <input type="text" id="Feedback" placeholder="Feedback">
+    <br>
+    <br>
+
+    <button onclick='sendmail()'>Submit</button>
+
+
+</body>
+
+</html>

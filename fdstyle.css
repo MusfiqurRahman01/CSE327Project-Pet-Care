@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(250, 252, 252);
+}
+
+#Feedback {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 55px;
+}
+
+#Entertoname {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+
+#Fromname {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+}
